@@ -98,7 +98,7 @@ public class AgroJava {
                     }
 
                     if (!alertaEncontrado) {
-                        System.out.println(" Nenhum talhão necessita de irrigação no momento. Todos com umidade adequada.");
+                        System.out.println("Nenhum talhão necessita de irrigação no momento. Todos com umidade adequada.");
                     }
                     break;
 
