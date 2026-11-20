@@ -6,6 +6,13 @@
 
 Sistema desenvolvido em **Java** para monitoramento de dados agrícolas, com foco no controle de **chuva semanal** e **umidade do solo em talhões**.
 
+## Partes do projeto
+
+| Parte | Conteúdo | Onde está |
+|:-----:|----------|-----------|
+| **1** | Marcos (RF01 a RF03): chuva semanal em vetor, umidade em matriz 4x4 e menu | esta página e a pasta [`demo/`](demo/) |
+| **2** | Evoluções AgroJavaAnalytics e AgroJavaSmartFarm (RF01 a RF12): histórico em CSV, dashboard, classificação dos talhões, relatórios e testes | ➡️ [`parte2/`](parte2/README.md) |
+
 ## Sobre o projeto
 
 O AgroJava permite cadastrar e analisar informações de uma propriedade agrícola por meio de uma aplicação executada no terminal.
