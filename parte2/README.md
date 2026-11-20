@@ -168,8 +168,6 @@ data,seg,ter,qua,qui,sex,sab,dom,media,total
 ## Tecnologias e conceitos
 
 - **Java 17+**
-- **Maven**
-- **JUnit 5** (testes)
 - **VS Code** + Extension Pack for Java
 - `Scanner`
 - `BufferedReader` / `Files.newBufferedReader`
@@ -193,7 +191,6 @@ data,seg,ter,qua,qui,sex,sab,dom,media,total
 ### Requisitos
 
 - **JDK 17** ou superior instalado.
-- **Maven** (ou o VS Code com a extensão *Extension Pack for Java*, que já roda projetos Maven).
 
 Para conferir a instalação:
 
@@ -210,7 +207,7 @@ mvn -version
 
 > Os arquivos são gravados em `dados/`, dentro da pasta aberta. Abra sempre a pasta `parte2/demo` para o histórico continuar no mesmo lugar.
 
-### Pelo terminal (Maven)
+### Pelo terminal
 
 Entre na pasta do projeto:
 
@@ -231,33 +228,6 @@ mvn compile exec:java -Dexec.mainClass=com.example.chuvas.RF01RegistroChuvas
 ```
 
 > No PowerShell, coloque o parâmetro entre aspas: `"-Dexec.mainClass=com.example.chuvas.RF01RegistroChuvas"`.
-
-### Pelo terminal (sem Maven)
-
-No PowerShell, dentro da pasta `parte2/demo`:
-
-```powershell
-javac -encoding UTF-8 -d target/classes (Get-ChildItem -Recurse src/main/java -Filter *.java).FullName
-java -cp target/classes com.example.App
-```
-
----
-
-## Testes
-
-Cada requisito tem um teste próprio em `src/test/java`, com **29 testes** no total.
-
-Rodar todos os testes:
-
-```bash
-mvn test
-```
-
-Rodar o teste de um exercício só:
-
-```bash
-mvn test -Dtest=RF09ClassificarTalhoesTest
-```
 
 ---
 
